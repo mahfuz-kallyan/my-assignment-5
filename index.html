@@ -35,8 +35,8 @@
 </head>
 
 <body class="max-w-[1440px] font-lexend">
-    <header  class="sticky top-0">
-        <nav class="flex justify-between items-center p-12 mx-auto bg-stone-100">
+    <header  class="sticky top-0 bg-stone-100">
+        <nav class="flex justify-between items-center p-12 mx-auto">
             <button id="blog" class="text-lg font-semibold bg-primary p-3 w-1/12 rounded-lg text-textColor">Blog</button>
             <div class="flex justify-center items-center gap-4">
                 <img src="./assets/logo.png" alt="">
@@ -44,16 +44,16 @@
             </div>
             <div class="flex justify-center items-center gap-2">
                 <img src="./assets/coin.png" alt="">
-                <p class="text-lg font-semibold text-textColor">65000</p>
+                <p id="main-balance" class="text-lg font-semibold text-textColor">65000</p>
                 <p class="text-lg font-semibold text-textColor">BDT</p>
             </div>
         </nav>
-    </header>
-    <main>
-        <div class="flex justify-center items-center gap-5 mt-10">
+        <div class="flex justify-center items-center gap-5 pb-4">
             <button id="donate-btn" class="text-lg font-semibold text-textColor bg-primary lg:w-1/12 p-4 rounded-lg">Donation</button>
             <button id="history-btn" class="text-lg font-semibold text-textColor bg-secondary lg:w-1/12 p-4 rounded-lg">History</button>
         </div>
+    </header>
+    <main>
         <div id="donate">
             <section class="mx-auto border-2 rounded-lg w-10/12 mt-14">
                 <div class="flex flex-col lg:flex-row justify-center items-center p-4 gap-6 mx-auto">
@@ -61,7 +61,7 @@
                     <div class="flex flex-col justify-center items-start space-y-3">
                         <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-sm font-normal text-textColor">5500</p>
+                            <p id="amount-noakhali" class="text-sm font-normal text-textColor">5500</p>
                             <p class="text-sm font-normal text-textColor">BDT</p>
                         </div>
                         <h3 class="text-xl font-bold text-textColor">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -70,7 +70,7 @@
                             security. Families are struggling to survive, with many left homeless, in debt, and without access
                             to basic necessities.</p>
                         <input id="input-noakhali" class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
-                        <button id="donate-noakhali" class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+                        <button id="donate-btn-noakhali" class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
                     </div>
                 </div>
               </section>
@@ -81,13 +81,13 @@
                     <div class="flex flex-col justify-center items-start space-y-3">
                         <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-sm font-normal text-textColor">2000</p>
+                            <p id="amount-feni" class="text-sm font-normal text-textColor">2000</p>
                             <p class="text-sm font-normal text-textColor">BDT</p>
                         </div>
                         <h3 class="text-xl font-bold text-textColor">Donate for Flood Relief in Feni, Bangladesh</h3>
                         <p class="text-lg font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                        <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
-                        <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+                        <input id="input-feni" class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                        <button id="donate-btn-feni" class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
                     </div>
                 </div>
               </section>
@@ -98,13 +98,13 @@
                     <div class="flex flex-col justify-center items-start space-y-3">
                         <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-sm font-normal text-textColor">3500</p>
+                            <p id="amount-comilla" class="text-sm font-normal text-textColor">3500</p>
                             <p class="text-sm font-normal text-textColor">BDT</p>
                         </div>
                         <h3 class="text-xl font-bold text-textColor">Donate for Flood at Comilla, Bangladesh</h3>
                         <p class="text-lg font-light">In the awake of the recent catastrophic floods, countless lives have been turn upside down in Comilla and surrounding ares of Comilla. Homes have been lost, communities have been shattered, and the basic necessities that so many of us take for granted have been swept away in the rushing waters. </p>
-                        <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
-                        <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+                        <input id="input-comilla" class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                        <button id="donate-btn-comilla" class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
                     </div>
                 </div>
               </section>
@@ -115,13 +115,13 @@
                     <div class="flex flex-col justify-center items-start space-y-3">
                         <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-sm font-normal text-textColor">4000</p>
+                            <p id="amount-quota-1" class="text-sm font-normal text-textColor">4000</p>
                             <p class="text-sm font-normal text-textColor">BDT</p>
                         </div>
                         <h3 class="text-xl font-bold text-textColor">Aid for Injured in the Quota Movement</h3>
                         <p class="text-lg font-light">For those who are undergoing treatment in various private hospitals, the government has requested those privates hospitals to waive the fee or if that is not possible to keep the fee minimum, reads a notification published by the government on the 15 August.</p>
-                        <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
-                        <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+                        <input id="quota-1" class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                        <button id="btn-quota-1" class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
                     </div>
                 </div>
               </section>
@@ -132,13 +132,13 @@
                     <div class="flex flex-col justify-center items-start space-y-3">
                         <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-sm font-normal text-textColor">6000</p>
+                            <p id="amount-quota-2" class="text-sm font-normal text-textColor">6000</p>
                             <p class="text-sm font-normal text-textColor">BDT</p>
                         </div>
                         <h3 class="text-xl font-bold text-textColor">Died many in Quota Movement</h3>
                         <p class="text-lg font-light">The deceased is Md Shumon Mia. He would study at a madrasa at Madhobdi in Narshingdi. Shumon would regularly join programmers of the student against discrimination movement which demanded reforms in Quota in government jobs. He received bullets during the agitation on 20 July. A bullet hit his abdomen.  </p>
-                        <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
-                        <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+                        <input id="quota-2" class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                        <button id="btn-quota-2" class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
                     </div>
                 </div>
               </section>
@@ -146,11 +146,18 @@
 
       <!-- History start -->
 
-      <section id="history" class="hidden">
-        <h2>I am here</h2>
+      <section id="history" class="hidden space-y-4 mt-10 w-11/12 mx-auto">
+        
       </section>
     </main>
     <script src="./js/app.js"></script>
+    <script src="./js/faq.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/noakhali.js"></script>
+    <script src="./js/feni.js"></script>
+    <script src="./js/comilla.js"></script>
+    <script src="./js/quota-1.js"></script>
+    <script src="./js/quota-2.js"></script>
 </body>
 
 </html>

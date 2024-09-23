@@ -1,17 +1,18 @@
 // common function
+function getInputFieldValueById(id){
+    const value = document.getElementById(id).value;
+    const valueNumber = parseFloat(value);
+    return valueNumber
+}
+
+function getTextFieldValueById(id){
+    const textValue = document.getElementById(id).innerText;
+    const textValueNumber = parseFloat(textValue);
+    return textValueNumber;
+}
 
 
-// document.getElementById('donate-btn').addEventListener('click', function(){
-//     this.classList.add('bg-[#B4F461]')
-//     document.getElementById('history-btn').classList.remove('bg-[#B4F461]')
-// })
-// document.getElementById('history-btn').addEventListener('click', function(){
-//     this.classList.add('bg-[#B4F461]')
-//     document.getElementById('donate-btn').classList.remove('bg-primary')
-// })
-
-
-// donate button and history button
+// donate and history button
 function showSection(id){
     document.getElementById('donate').classList.add('hidden');
     document.getElementById('history').classList.add('hidden');
@@ -20,16 +21,4 @@ function showSection(id){
     document.getElementById(id).classList.remove('hidden')
 }
 
-document.getElementById('donate-btn').addEventListener('click', function(){
-    showSection('donate');
-    
-})
-document.getElementById('history-btn').addEventListener('click', function(){
-    showSection('history');
-})
 
-
-// for Blog
-document.getElementById('blog').addEventListener('click', function(){
-    window.location.href = 'faq.html';
-})
