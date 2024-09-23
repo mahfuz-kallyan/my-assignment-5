@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Daisy Ui -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#1111110D',
+                        textColor: '#111111',
+                    },
+                    fontFamily: {
+                        lexend: "Lexend",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="max-w-[1440px] font-lexend">
+    <header>
+        <nav class="flex justify-between items-center p-12 mx-auto bg-stone-100">
+            <button class="text-lg font-semibold bg-primary p-3 w-1/12 rounded-lg text-textColor">Blog</button>
+            <div class="flex justify-center items-center gap-4">
+                <img src="./assets/logo.png" alt="">
+                <p class="text-lg font-semibold text-textColor">Donate Bangladesh</p>
+            </div>
+            <div class="flex justify-center items-center gap-2">
+                <img src="./assets/coin.png" alt="">
+                <p class="text-lg font-semibold text-textColor">65000</p>
+                <p class="text-lg font-semibold text-textColor">BDT</p>
+            </div>
+        </nav>
+        <div class="flex justify-center items-center gap-5 mt-10">
+            <button id="donate" class="text-lg font-semibold text-textColor bg-primary w-1/12 p-4 rounded-lg">Donation</button>
+            <button id="history" class="text-lg font-semibold text-textColor bg-secondary w-1/12 p-4 rounded-lg">History</button>
+        </div>
+    </header>
+    <main>
+      <section class="mx-auto border-2 rounded-lg w-10/12 mt-14">
+        <div class="flex flex-col lg:flex-row justify-center items-center p-4 gap-6 mx-auto">
+            <img src="./assets/noakhali.png" alt="">
+            <div class="flex flex-col justify-center items-start space-y-3">
+                <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-sm font-normal text-textColor">5500</p>
+                    <p class="text-sm font-normal text-textColor">BDT</p>
+                </div>
+                <h3 class="text-xl font-bold text-textColor">Donate for Flood at Noakhali, Bangladesh</h3>
+                <p class="text-lg font-light">Bangladesh is currently facing a devastating flood crisis, and the district of Noakhali has been hit
+                    particularly hard. Thousands of people have lost their homes, livelihoods, and all sense od
+                    security. Families are struggling to survive, with many left homeless, in debt, and without access
+                    to basic necessities.</p>
+                <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+            </div>
+        </div>
+      </section>
+
+      <section class="mx-auto border-2 rounded-lg w-10/12 mt-14">
+        <div class="flex flex-col lg:flex-row justify-center items-center p-4 gap-6 mx-auto">
+            <img src="./assets/feni.png" alt="">
+            <div class="flex flex-col justify-center items-start space-y-3">
+                <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-sm font-normal text-textColor">2000</p>
+                    <p class="text-sm font-normal text-textColor">BDT</p>
+                </div>
+                <h3 class="text-xl font-bold text-textColor">Donate for Flood Relief in Feni, Bangladesh</h3>
+                <p class="text-lg font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+            </div>
+        </div>
+      </section>
+
+      <section class="mx-auto border-2 rounded-lg w-10/12 mt-14">
+        <div class="flex flex-col lg:flex-row justify-center items-center p-4 gap-6 mx-auto">
+            <img class="w-6/12 rounded-xl" src="./assets/flood-1.jpg" alt="">
+            <div class="flex flex-col justify-center items-start space-y-3">
+                <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-sm font-normal text-textColor">3500</p>
+                    <p class="text-sm font-normal text-textColor">BDT</p>
+                </div>
+                <h3 class="text-xl font-bold text-textColor">Donate for Flood at Comilla, Bangladesh</h3>
+                <p class="text-lg font-light">In the awake of the recent catastrophic floods, countless lives have been turn upside down in Comilla and surrounding ares of Comilla. Homes have been lost, communities have been shattered, and the basic necessities that so many of us take for granted have been swept away in the rushing waters. </p>
+                <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+            </div>
+        </div>
+      </section>
+
+      <section class="mx-auto border-2 rounded-lg w-10/12 mt-14">
+        <div class="flex flex-col lg:flex-row justify-center items-center p-4 gap-6 mx-auto">
+            <img src="./assets/quota-protest.png" alt="">
+            <div class="flex flex-col justify-center items-start space-y-3">
+                <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-sm font-normal text-textColor">4000</p>
+                    <p class="text-sm font-normal text-textColor">BDT</p>
+                </div>
+                <h3 class="text-xl font-bold text-textColor">Aid for Injured in the Quota Movement</h3>
+                <p class="text-lg font-light">For those who are undergoing treatment in various private hospitals, the government has requested those privates hospitals to waive the fee or if that is not possible to keep the fee minimum, reads a notification published by the government on the 15 August.</p>
+                <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+            </div>
+        </div>
+      </section>
+
+      <section class="mx-auto border-2 rounded-lg w-10/12 mt-14">
+        <div class="flex flex-col lg:flex-row justify-center items-center p-4 gap-6 mx-auto">
+            <img class="w-6/12 rounded-xl" src="./assets/quota-2.webp" alt="">
+            <div class="flex flex-col justify-center items-start space-y-3">
+                <div class="flex justify-center items-center gap-2 bg-secondary p-2 rounded-lg">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-sm font-normal text-textColor">6000</p>
+                    <p class="text-sm font-normal text-textColor">BDT</p>
+                </div>
+                <h3 class="text-xl font-bold text-textColor">Died many in Quota Movement</h3>
+                <p class="text-lg font-light">The deceased is Md Shumon Mia. He would study at a madrasa at Madhobdi in Narshingdi. Shumon would regularly join programmers of the student against discrimination movement which demanded reforms in Quota in government jobs. He received bullets during the agitation on 20 July. A bullet hit his abdomen.  </p>
+                <input class="w-full border-2 p-3 rounded-lg" type="text" placeholder="Write Donation Amount">
+                <button class="bg-primary w-full p-3 rounded-lg text-lg font-semibold text-textColor">Donate Now</button>
+            </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
