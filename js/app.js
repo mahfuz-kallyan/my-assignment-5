@@ -19,24 +19,27 @@ function showSection(id) {
     document.getElementById(id).classList.remove('hidden')
 }
 
+let currentBalance = 65000;
+const mainBalance = document.getElementById('main-balance');
+mainBalance.innerText = currentBalance;
+
 
 function handleDonation(btnId, inputId, amountId, title) {
     // for modal
     const modal = document.getElementById('modal');
     const close = document.getElementById('btn');
-    const mainAccount = Number(getTextFieldValueById('main-balance'));
+    // const mainAccount = Number(mainBalance.innerText);
 
     // For donation
     document.getElementById(btnId).addEventListener('click', function () {
         const inputValue = Number(getInputFieldValueById(inputId));
         const textValue = Number(getTextFieldValueById(amountId));
-
-
-        if (!isNaN(inputValue) && inputValue > 0 && inputValue < mainAccount) {
+        
+        if (!isNaN(inputValue) && inputValue > 0 && inputValue <= currentBalance) {
             const donateAccount = inputValue + textValue;
             document.getElementById(amountId).innerText = donateAccount;
-            const newBalance = mainAccount - inputValue;
-            document.getElementById('main-balance').innerText = newBalance;
+            currentBalance -= inputValue;
+            mainBalance.innerText = currentBalance;
 
             // Add history
             const div = document.createElement('div');
