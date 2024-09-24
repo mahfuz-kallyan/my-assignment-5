@@ -42,3 +42,16 @@ display: none;
     font-size: large;
     font-weight: 500;
 }
+
+@media screen and (max-width: 576px){
+    .modal-content{
+        position: fixed;
+        z-index: 1;
+        left: 10%;
+        top: 15%;
+        width: 90%;
+        height: 190%;
+        overflow: auto;
+        display: none;
+        }
+}
