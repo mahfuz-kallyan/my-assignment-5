@@ -9,3 +9,4 @@ document.getElementById('donate-btn').addEventListener('click', function(){
     this.classList.add('bg-primary');
     document.getElementById('history-btn').classList.remove('bg-[#B4F461]')
 })
+
