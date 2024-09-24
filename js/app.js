@@ -1,14 +1,12 @@
 // common function
 function getInputFieldValueById(id){
     const value = document.getElementById(id).value;
-    const valueNumber = parseFloat(value);
-    return valueNumber
+    return value;
 }
 
 function getTextFieldValueById(id){
     const textValue = document.getElementById(id).innerText;
-    const textValueNumber = parseFloat(textValue);
-    return textValueNumber;
+    return textValue;
 }
 
 

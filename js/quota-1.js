@@ -4,14 +4,17 @@ document.getElementById('btn-quota-1').addEventListener('click', function () {
     const mainAccount = getTextFieldValueById('main-balance');
 
     if (isNaN(inputValue) || inputValue < 0 || inputValue > mainAccount) {
-        alert('Amount not valid');
+        alert('Amount is not valid');
         return;
     }
     else {
-        const newValue = inputValue + textValue;
-        document.getElementById('amount-quota-1').innerText = newValue;
-        const balance = mainAccount - inputValue;
-        document.getElementById('main-balance').innerText = balance;
+        const inputValueNumber = parseFloat(inputValue);
+        const textValueNumber = parseFloat(textValue);
+        const balance = parseFloat(mainAccount);
+        const donateAccount = inputValueNumber + textValueNumber;
+        document.getElementById('amount-quota-1').innerText = donateAccount;
+        const newBalance = balance - inputValueNumber;
+        document.getElementById('main-balance').innerText = newBalance;
 
         // Add history
         const div = document.createElement('div');
@@ -22,3 +25,4 @@ document.getElementById('btn-quota-1').addEventListener('click', function () {
         document.getElementById('history').appendChild(div);
     }
 })
+

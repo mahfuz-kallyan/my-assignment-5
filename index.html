@@ -35,8 +35,8 @@
 </head>
 
 <body class="max-w-[1440px] font-lexend">
-    <header  class="sticky top-0 bg-stone-100">
-        <nav class="flex flex-col gap-4 lg:flex-row justify-between items-center p-12 mx-auto">
+    <header  class="sticky top-0  bg-violet-50">
+        <nav class="flex flex-col gap-4 lg:flex-row justify-between items-center p-10 mx-auto">
             <button id="blog" class="text-lg font-semibold bg-primary p-3 lg:w-1/12 rounded-lg text-textColor">Blog</button>
             <div class="flex justify-center items-center gap-4">
                 <img src="./assets/logo.png" alt="">
@@ -48,7 +48,7 @@
                 <p class="text-lg font-semibold text-textColor">BDT</p>
             </div>
         </nav>
-        <div class="flex justify-center items-center gap-5 pb-4">
+        <div class="flex justify-center items-center gap-5 pb-3">
             <button id="donate-btn" class="text-lg font-semibold text-textColor bg-primary lg:w-1/12 p-4 rounded-lg">Donation</button>
             <button id="history-btn" class="text-lg font-semibold text-textColor bg-secondary lg:w-1/12 p-4 rounded-lg">History</button>
         </div>
@@ -147,8 +147,16 @@
       <!-- History start -->
 
       <section id="history" class="hidden space-y-4 mt-10 w-11/12 mx-auto">
-        
       </section>
+
+       <!--modal start  -->
+       <div class="w-3/12 bg-yellow-50 rounded-lg flex flex-col justify-center items-center p-5 space-y-2 hidden">
+        <h2 class="text-2xl font-bold">Congrates!</h2>
+        <img src="./assets/coin.png" alt="">
+        <p class="text-sm font-light">You Have Donated For Humankind</p>
+        <p class="text-lg font-medium">Successfully</p>
+        <button class="bg-secondary p-2 rounded-lg">Close Confirmation</button>
+       </div>
     </main>
     <script src="./js/app.js"></script>
     <script src="./js/faq.js"></script>
